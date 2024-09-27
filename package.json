@@ -1,0 +1,46 @@
+{
+  "name": "react_movie_db_course",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@floating-ui/react-dom": "^2.0.5",
+    "@mui/x-date-pickers": "^6.19.0",
+    "date-fns": "^3.2.0",
+    "dayjs": "^1.11.10",
+    "moment": "^2.30.1",
+    "node-fetch": "^2.7.0",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.25.0",
+    "react-dom": "^18.2.0",
+    "react-fontawesome": "^1.6.1",
+    "react-icons": "^4.12.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.21.1",
+    "react-scripts": "1.1.5",
+    "sass": "^1.69.7",
+    "swiper": "^11.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-datepicker": "^4.19.5"
+  }
+}
