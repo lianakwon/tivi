@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;900');
+
+@font-face {
+  font-family: "mont";
+  font-weight: 100;
+  font-style: 'Thin';
+  src: url("./fonts/Montserrat-Thin.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "mont";
+  font-weight: 200;
+  font-style: 'ExtraLight';
+  src: url("./fonts/Montserrat-ExtraLight.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "mont";
+  font-weight: 300;
+  font-style: 'Light';
+  src: url("./fonts/Montserrat-Light.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "mont";
+  font-weight: 400;
+  font-style: 'Regular';
+  src: url("./fonts/Montserrat-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "mont";
+  font-weight: 500;
+  font-style: 'Medium';
+  src: url("./fonts/Montserrat-Medium.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "mont";
+  font-weight: 600;
+  font-style: 'SemiBold';
+  src: url("./fonts/Montserrat-SemiBold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "mont";
+  font-weight: 700;
+  font-style: 'Bold';
+  src: url("./fonts/Montserrat-Bold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "mont";
+  font-weight: 800;
+  font-style: 'ExtraBold';
+  src: url("./fonts/Montserrat-ExtraBold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "mont";
+  font-weight: 900;
+  font-style: 'Black';
+  src: url("./fonts/Montserrat-Black.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "noto";
+  font-weight: 100;
+  font-style: normal;
+  src: url("./fonts/NotoSansKR-Thin.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "noto";
+  font-weight: 200;
+  font-style: normal;
+  src: url("./fonts/NotoSansKR-ExtraLight.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "noto";
+  font-weight: 300;
+  font-style: normal;
+  src: url("./fonts/NotoSansKR-Light.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "noto";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/NotoSansKR-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "noto";
+  font-weight: 500;
+  font-style: normal;
+  src: url("./fonts/NotoSansKR-Medium.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "noto";
+  font-weight: 600;
+  font-style: normal;
+  src: url("./fonts/NotoSansKR-SemiBold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "noto";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./fonts/NotoSansKR-Bold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "noto";
+  font-weight: 800;
+  font-style: normal;
+  src: url("./fonts/NotoSansKR-ExtraBold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "noto";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./fonts/NotoSansKR-Black.ttf") format("ttf");
+  font-display: swap;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Noto+Sans+KR";
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  transition: all.3s;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: all .1s;
+}
+
+a:hover {
+  opacity: .4;
+}
+
+.rmdb-movieinfo-thumb a:hover {
+  opacity: 1;
+}
+
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+body.Light-mode {   /*바디 태그에 다크모드라는 클래스가 달리도록함*/
+  background-color: #fff;  
+}
