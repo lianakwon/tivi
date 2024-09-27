@@ -1,0 +1,205 @@
+.rmdb-searchbar {
+  width: 100%;
+  position: relative;
+  padding: 140px 0 20px;
+  box-sizing: border-box;
+  color: #fff;
+  /* margin-top: 160px; */
+}
+
+.rmdb-searchbar svg {
+  width: 30px;
+  height: 30px;
+  margin-left: 28px;
+  margin-top: 12px;
+  opacity: 0.4;
+  transition: all.2s;
+}
+
+.rmdb-searchbar-content {
+  width: 100%;
+  height: 54px;
+  max-width: 1400px;
+  display: block;
+  margin: 0 auto;
+  backdrop-filter: blur(3px);
+  border-radius: 40px;
+  position: relative;
+  color: #fff;
+}
+
+.rmdb-searchbar-input {
+  max-width: 1020px;
+  float: right;
+  font-size: 20px;
+  line-height: 54px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  padding-left: 80px;
+  background: transparent;
+  border-radius: 40px;
+  color: #fff;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all.2s;
+  text-transform: uppercase;
+}
+
+.rmdb-searchbar-input::placeholder {
+  color: rgba(255, 255, 255, .3);
+  font-weight: 300;
+}
+
+.rmdb-searchbar-input:focus,
+.rmdb-searchbar-input:hover {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 24px 0 rgba(255, 255, 255, 0.2);
+}
+
+.rmdb-searchbar-input:focus .rmdb-searchbar svg,
+.rmdb-searchbar-input:hover .rmdb-searchbar svg {
+  color: blue;
+}
+
+.rmdb-searchbar-input:focus {
+  outline: none;
+}
+
+.searchBtn {
+  float: right;
+  width: 360px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.searchBtn li {
+  float: left;
+  display: block;
+  width: 100px;
+  height: 54px;
+  text-align: center;
+}
+
+.searchBtn li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: .3;
+  line-height: 54px;
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 26px;
+}
+
+.searchBtn #multiBtn {
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  max-width: 120px;
+  display: block;
+}
+
+.searchBtn #movieBtn {
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  max-width: 120px;
+  display: block;
+}
+
+.searchBtn #tvBtn {
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  max-width: 120px;
+  display: block;
+}
+
+.searchBtn .on {
+  border: 1px solid rgba(255, 255, 255, .7);
+  opacity: 1;
+}
+
+
+/* MAX-WIDTH : 1400 */
+@media screen and (max-width:1400px) {
+  .rmdb-searchbar {
+    padding: 0 20px;
+  }
+  .rmdb-searchbar-input {
+    width: 69%;
+  }
+  .searchBtn {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .searchBtn li {
+    transition: all.2s;
+    width: 31%;
+    margin: 0;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .rmdb-searchbar-input {
+    font-size: 18px;
+    color: #fff;
+    width: 58%;
+  }
+  .searchBtn {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .searchBtn li {
+    transition: all.2s;
+    width: 30%;
+    margin: 0;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .rmdb-searchbar-input {
+    font-size: 16px;
+    color: #fff;
+  }
+}
+
+
+
+
+
+
+/* LIGHT - MODE */
+.Light-mode .rmdb-searchbar,
+.Light-mode .rmdb-searchbar-content,
+.Light-mode .rmdb-searchbar-input {
+  color: #000;
+}
+
+.Light-mode .rmdb-searchbar-input {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.Light-mode .rmdb-searchbar-input::placeholder {
+  color: rgba(0, 0, 0, .3);
+}
+
+.Light-mode .rmdb-searchbar-input:focus,
+.Light-mode .rmdb-searchbar-input:hover {
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Light-mode .searchBtn li a {
+  border-color: rgba(0, 0, 0, .4);
+  color: #000;
+}
+
+.Light-mode .searchBtn .on {
+  border-color: rgba(0, 0, 0, .81);
+}

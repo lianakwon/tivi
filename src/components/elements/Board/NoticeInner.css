@@ -1,0 +1,140 @@
+#noticeInner {
+    height: max-content;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: block;
+    padding: 180px 0 150px;
+}
+
+#noticeInner .inner {
+    height: 100%;
+    width: 100%;
+    padding: 20px 320px;
+}
+
+#noticeInner p {
+    color: #fff;
+    margin: 20px 0;
+    line-height: 24px;
+    color: rgba(255, 255, 255, .7);
+}
+
+#noticeInner>p {
+    float: right;
+    margin: 24px 0 0;
+}
+
+#noticeInner h1 {
+    color: #fff;
+    float: left;
+    margin: 8px auto 20px;
+    font-size: 24px;
+}
+
+#noticeInner .inner {
+    background: rgba(255, 255, 255, .03);
+    border-width: 1px 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#noticeInner .inner img {
+    width: 100%;
+}
+
+#noticeInner .inner::-webkit-scrollbar {
+    background: rgba(255, 255, 255, 0);
+
+}
+
+#noticeInner .inner::-webkit-scrollbar-thumb {
+    width: 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, .1);
+}
+
+
+
+
+/* MAX-WIDTH : 1400 */
+@media screen and (max-width: 1400px) {
+    #noticeInner {
+        width: 100%;
+        display: block;
+        padding: 160px 2vw 10px;
+    }
+}
+
+/* MAX-WIDTH : 1080 */
+@media screen and (max-width: 1080px) {
+
+    #noticeInner .inner {
+        height: 100%;
+        width: 100%;
+        padding: 20px 5px 20px 20px;
+    }
+    #noticeInner ul li button {
+        display: none;
+    }
+
+    #noticeInner ul li a {
+        padding: 0 12px;
+    }
+
+    #noticeInner ul li p {
+        margin-right: 0;
+    }
+}
+
+/* MAX-WIDTH : 900 */
+@media screen and (max-width: 640px) {
+    #notice ul li h3 {
+        text-overflow: ellipsis;
+        text-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    #notice ul li .left {
+        width: calc(100% - 90px);
+        text-overflow: ellipsis;
+        text-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    #notice ul li h3 {
+        text-overflow: ellipsis;
+        text-wrap: nowrap;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+/* LIGHT - MODE */
+
+.Light-mode #noticeInner p {
+    color: rgba(0, 0, 0, .7);
+}
+
+.Light-mode #noticeInner h1 {
+    color: #000;
+}
+
+.Light-mode #noticeInner .inner {
+    background: rgba(0, 0, 0, .05);
+}
+
+.Light-mode #noticeInner .inner::-webkit-scrollbar {
+    background: rgba(0, 0, 0, 0);
+
+}
+
+.Light-mode #noticeInner .inner::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .1);
+}

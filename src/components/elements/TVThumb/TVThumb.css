@@ -1,0 +1,23 @@
+.rmdb-moviethumb img {
+  width: 100%;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+.rmdb-moviethumb a desc p:last-child {
+  color: rgba(255,255,255,.7);
+}
+
+.rmdb-moviethumb a {
+  display: inline;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  opacity: 0.8;
+}
+.Light-mode .rmdb-moviethumb a .decs {
+  color: black;
+}

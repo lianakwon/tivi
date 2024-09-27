@@ -1,0 +1,17 @@
+.rmdb-home {
+  margin-bottom: 100px;
+}
+
+.rmdb-home-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.rmdb-home>div>a:hover {
+  opacity: 1;
+}
+
+.rmdb-home .animated {
+  transition-duration: 300ms !important;
+}

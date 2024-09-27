@@ -1,0 +1,249 @@
+.rmdb-movieinfo {
+  width: 100%;
+  height: 94vh;
+  padding: 210px 2% 120px;
+  box-sizing: border-box;
+  animation: animateMovieinfo 1s;
+  background: #000;
+  margin-bottom: 120px;
+}
+
+@keyframes animateMovieinfo {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.rmdb-movieinfo-content {
+  max-width: 960px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 180px rgba(0, 0, 0, .9);
+  border: 1px solid rgba(255, 255, 255, .1);
+  overflow: hidden;
+  position: relative;
+  backdrop-filter: brightness(1.1);
+  -webkit-backdrop-filter: brightness(1.1);
+}
+
+.rmdb-movieinfo-img {
+  background-size: cover !important;
+  background-position: center !important;
+  width: 100%;
+  height: 94%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .6;
+}
+
+.rmdb-movieinfo-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 94%;
+  width: 100%;
+  backdrop-filter: blur(16px) brightness(.7);
+  -webkit-backdrop-filter: blur(16px) brightness(.7);
+}
+
+.rmdb-movieinfo-thumb {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+}
+
+.rmdb-movieinfo .rmdb-moviethumb {
+  height: 100%;
+}
+
+.rmdb-movieinfo-thumb img {
+  height: 100%;
+}
+
+.rmdb-movieinfo-text {
+  padding: 50px 24px;
+  color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  width: 57%;
+  height: 94%;
+  right: 0;
+  top: 15px;
+}
+
+.rmdb-movieinfo-text h1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  width: 90%;
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.rmdb-movieinfo-text h3 {
+  line-height: 0;
+  margin: 36px 0 14px;
+}
+
+.rmdb-movieinfo-text p {
+  line-height: 21px;
+  width: 90%;
+  color: rgba(255, 255, 255, .8);
+  font-weight: 300;
+}
+
+.rmdb-movieinfo-text a {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, .4);
+  background: rgba(255, 255, 255, .1);
+  margin-top: 36px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: all.2s;
+}
+
+.rmdb-movieinfo-text a:hover {
+  border: 1px solid rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, .4);
+  opacity: 1;
+}
+
+.rmdb-rating {
+  width: 250px;
+  height: 20px;
+  margin-top: 13px;
+  position: relative;
+}
+
+.rmdb-score {
+  position: absolute;
+  margin: 0;
+  left: 192px;
+  top: 0;
+}
+
+meter::-webkit-meter-bar {
+  background: rgba(255, 255, 255, .2);
+  width: 180px;
+  border: none;
+  height: 10px;
+}
+
+meter::-webkit-meter-optimum-value,
+meter::-webkit-meter-suboptimum-value,
+meter::-webkit-meter-even-less-good-value {
+  background: #fff;
+  border-radius: 5px;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+
+  .rmdb-movieinfo-blur {
+    backdrop-filter: brightness(.6);
+    -webkit-backdrop-filter: brightness(.6);
+  }
+
+  .rmdb-movieinfo-content {
+    max-width: 360px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 180px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(24px) brightness(1.1);
+    -webkit-backdrop-filter: blur(24px) brightness(1.1);
+  }
+
+  .rmdb-movieinfo .rmdb-moviethumb {
+    display: none;
+  }
+
+  .rmdb-movieinfo-text {
+    width: 100%;
+  }
+}
+
+
+
+
+/* LIGHT - MODE */
+
+.Light-mode .rmdb-movieinfo {
+  background: #fff;
+}
+
+.Light-mode .rmdb-movieinfo-content {
+  box-shadow: 0 0 180px rgba(0, 0, 0, .3);
+  border: 1px solid rgba(255, 255, 255, .1);
+  backdrop-filter: blur(24px) brightness(1.4);
+  -webkit-backdrop-filter: blur(24px) brightness(1.4);
+}
+
+.Light-mode .rmdb-movieinfo-blur {
+  backdrop-filter: brightness(.6);
+  -webkit-backdrop-filter: brightness(.6);
+}
+
+.Light-mode .rmdb-movieinfo-text {
+  color: #000;
+}
+
+.Light-mode .rmdb-movieinfo-text p {
+  color: rgba(0,0,0,.8);
+  font-weight: 500;
+}
+
+.Light-mode .rmdb-movieinfo-text a {
+  border: 1px solid rgba(0, 0, 0, .4);
+  background: rgba(0, 0, 0, .1);
+  color: #000;
+  font-weight: 600;
+}
+
+.Light-mode .rmdb-movieinfo-text a:hover {
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, .4);
+}
+
+.Light-mode meter::-webkit-meter-bar {
+  background: rgba(0, 0, 0, .2);
+}
+
+.Light-mode meter::-webkit-meter-optimum-value,
+.Light-mode meter::-webkit-meter-suboptimum-value,
+.Light-mode meter::-webkit-meter-even-less-good-value {
+  background: #000;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+
+  .Light-mode .rmdb-movieinfo-blur {
+    backdrop-filter: brightness(.6);
+    -webkit-backdrop-filter: brightness(.6);
+  }
+
+  .Light-mode .rmdb-movieinfo-content {
+    box-shadow: 0 0 180px rgba(0, 0, 0, .3);
+    backdrop-filter: blur(24px) brightness(1.4);
+    -webkit-backdrop-filter: blur(24px) brightness(1.4);
+  }
+}

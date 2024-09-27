@@ -1,0 +1,56 @@
+.rmdb-loadmorebtn {
+  width: 100%;
+  max-width: 1400px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.rmdb-loadmorebtn p {
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: block;
+  padding: 20px 20px 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.rmdb-loadmorebtn p::after {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  height: 10px;
+  width: 10px;
+  border: 2px solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+
+
+/* MAX-WIDTH : 1400 */
+
+@media screen and (max-width:1400px) {
+  .rmdb-loadmorebtn {
+    width: calc(100vw - 40px);
+    margin: 0 auto;
+  }
+}
+
+
+
+/* LIGHT - MODE */
+
+.Light-mode .rmdb-loadmorebtn p,
+.Light-mode .rmdb-loadmorebtn p::after {
+  color: #000 !important;
+}
+
+.Light-mode .rmdb-loadmorebtn p {
+  border-color: rgba(0, 0, 0, .4) !important;
+}
+
+.Light-mode .rmdb-loadmorebtn p::after {
+  border-color: #000 !important;
+}

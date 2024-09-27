@@ -1,0 +1,351 @@
+.join {
+    height: calc(100vh - 122px);
+    width: 100%;
+    display: block;
+    padding: 240px 0;
+}
+
+.join .join_inner {
+    height: 420px;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.join h1 {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    display: block;
+    font-size: 24px;
+}
+
+.join form {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    height: calc(100% - 60px);
+}
+
+.join form>a,
+.join form button,
+.join form input {
+    width: 100%;
+    line-height: 50px;
+    border-radius: 25px;
+    padding: 0 24px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.join form input {
+    background-color: rgba(255, 255, 255, .1);
+    color: #fff;
+    font-size: 15px;
+}
+
+.join form input[type='password'] {
+    letter-spacing: 5px;
+}
+
+.join form>a,
+.join form button {
+    font-weight: 700;
+    cursor: pointer;
+    transition: all.2s;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    color: #000;
+    /* opacity: .3;
+    cursor: default; */
+}
+
+/* .join form>a.on,
+.join form button.on {
+    opacity: 1;
+    cursor: pointer;
+} */
+
+.join form>a span {
+    font-weight: 300;
+    /* padding: 0 20px; */
+}
+
+.join p a {
+    font-weight: 600;
+}
+
+.join p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: rgba(255, 255, 255, .4);
+    font-weight: 300;
+    font-size: 12px;
+    position: absolute;
+    bottom: -8px;
+    padding: 0 8px;
+}
+
+.join form>a:hover .join form button:hover {
+    opacity: .6;
+}
+
+.join .join_auto {
+    display: block;
+    float: left;
+    margin-top: 18px;
+    text-align: left;
+    opacity: .5;
+    font-weight: 400;
+    padding-right: 40px;
+    height: 12px;
+    line-height: 12px;
+    border-right: 1px solid rgba(255, 255, 255, .3);
+}
+
+.join input[type='checkbox'] {
+    width: fit-content;
+    height: fit-content;
+    line-height: 12px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 0;
+    margin-left: 8px;
+}
+
+.join label {
+    font-size: 12px;
+    line-height: 12px;
+    line-height: 12px;
+    margin-left: 4px;
+    position: relative;
+}
+
+.join .join_agreement {
+    display: block;
+    width: 360px;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+}
+
+.join .join_agreement li {
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    border-width: 1px 0;
+    color: rgba(255, 255, 255, .7);
+}
+
+.join .join_agreement label::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: #f00;
+    position: absolute;
+    top: 22px;
+    right: -8px;
+}
+
+.join .join_agreement label[for='join_agree_3']::after {
+    background: rgba(255, 255, 255, .3);
+}
+
+.join li:nth-child(4) {
+    background: rgba(255, 255, 255, .1);
+}
+
+.join .join_agreement label[for='join_agree_4']::after {
+    background: rgba(255, 255, 255, 0);
+}
+
+.join .join_agreement input,
+.join .join_agreement label,
+.join .join_agreement .join_view_more {
+    position: absolute;
+    cursor: pointer;
+}
+
+.join .join_agreement input {
+    left: 0;
+    top: 24px;
+}
+
+.join .join_agreement label {
+    left: 24px;
+    line-height: 60px;
+}
+
+.join .join_agreement .join_view_more {
+    right: 0;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, .3);
+    font-size: 12px;
+}
+
+
+
+
+
+.join .join_sns {
+
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    float: right;
+}
+
+.join .join_sns ul {
+    display: inline-block;
+    width: fit-content;
+}
+
+.join .join_sns li {
+    display: inline-block;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.join .join_sns li a {
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.join .join_sns li .google {
+    background: #004b91;
+    color: #fff;
+    font-size: 30px;
+}
+
+.join .join_sns li .naver {
+    background: #1ba300;
+    color: #fff;
+}
+
+.join .join_sns li .kakao {
+    background: #fd0;
+    color: #644100;
+}
+
+.join .flex,
+.join .flex2 {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.join .flex input {
+    width: 48%;
+}
+
+.join .flex2 input {
+    width: 31%;
+}
+
+
+
+
+
+.join .error-message {
+    color: #f54;
+    animation: 1s error;
+    display: block;
+    text-align: left;
+    height: 20px;
+    line-height: 20px;
+    width: 100%;
+    position: absolute;
+}
+
+.join .error-message.id {
+    top: 51px;
+}
+
+.join .error-message.pw {
+    top: 121px;
+}
+
+.join .error-message.nm {
+    top: 191px;
+}
+
+.join .error-message.pn {
+    top: 261px;
+}
+
+@keyframes error {
+    0% {
+        margin-top: 8px;
+    }
+
+    25% {
+        margin-top: 0px;
+    }
+
+    50% {
+        margin-top: 8px;
+    }
+
+    75% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: 8px;
+    }
+}
+
+
+
+
+/* LIGHT - MODE */
+
+
+.Light-mode .join h1,
+.Light-mode .join .join_agreement li,
+.Light-mode .join_agreement ul li label,
+.Light-mode .join form>a {
+    color: #000;
+}
+
+.Light-mode .join .join_agreement .join_view_more {
+    color: rgba(0, 0, 0, .5);
+}
+
+.Light-mode .join form>a {
+    background-color: #000;
+    color: #fff;
+}
+
+.Light-mode .join form button {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.Light-mode .join .join_agreement {
+    border-top: 1px solid rgba(0, 0, 0, .4);
+}
+
+.Light-mode .join .join_agreement li {
+    border-color: 1px solid rgba(0, 0, 0, .4);
+}
+
+.Light-mode .join form input {
+    background-color: rgba(0, 0, 0, .1);
+    color: #000;
+}
+
+.Light-mode .join li:nth-child(4) {
+    background-color: rgba(0, 0, 0, .1);
+}

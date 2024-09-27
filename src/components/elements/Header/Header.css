@@ -1,0 +1,168 @@
+.rmdb-header {
+  width: 96%;
+  height: 100px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 2%;
+  padding: 0 2%;
+  z-index: 9;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+  transition: all.3s;
+}
+
+.rmdb-header svg {
+  height: 20px;
+  width: 20px;
+  margin-bottom: -5px;
+}
+
+.rmdb-header-content {
+  max-width: 1400px;
+  min-height: 60px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.rmdb-header h1 {
+  line-height: 100px;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 900;
+  position: absolute;
+  bottom: 0;
+  left: calc(190px - 13px);
+}
+
+.rmdb-header h1::before {
+  content: "";
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: #f00;
+  margin-bottom: 4px;
+  margin-right: 4px;
+}
+
+.rmdb-header a {
+  width: fit-content;
+  display: inline-block;
+}
+
+.rmdb-tmdb-logo {
+  width: 122px;
+}
+
+.header_menu {
+  width: fit-content;
+  height: 100px;
+  line-height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 80px);
+}
+
+.header_add {
+  display: block;
+  width: fit-content;
+  height: 100px;
+  line-height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 190px;
+}
+
+.rmdb-header ul {
+  display: block;
+  width: fit-content;
+  height: 100px;
+}
+
+.rmdb-header li {
+  float: left;
+  list-style: none;
+  padding: 0 20px;
+  text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+  .rmdb-header-content {
+    max-width: 1280px;
+    min-height: 0px;
+  }
+
+  .rmdb-tmdb-logo {
+    display: inline-block;
+    width: 80px;
+    margin-top: 0px;
+  }
+
+  .rmdb-logo {
+    width: 150px;
+    margin-top: 5px;
+  }
+}
+
+
+/* FOOTER */
+
+#footer {
+  left: 2%;
+  display: block;
+  height: 120px;
+  width: 96%;
+  margin: 0 auto;
+  line-height: 120px;
+  margin-top: 0;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  clear: both;
+}
+
+#footer .inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#footer .footer_logo {
+  position: absolute;
+  left: 0;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+#footer .footer_add {
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width:1400px) {
+  .rmdb-header {
+    display: none;
+  }
+  
+  #footer {
+    display: none;
+  }
+}
+
+
+
+/* LIGHT - MODE */
+
+.Light-mode .rmdb-header {
+  border-color: rgba(0, 0, 0, .2);
+}
+
+.Light-mode .rmdb-header-content a,
+.Light-mode .rmdb-header-content a h1 {
+  color: #000;
+}
+
+.Light-mode #footer {
+  color: #000;
+  border-color: rgba(0, 0, 0, .2);
+}

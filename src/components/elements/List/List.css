@@ -1,0 +1,123 @@
+.list-grid {
+  width: 100%;
+  display: block;
+  max-width: 1400px;
+  margin: 160px auto 0;
+}
+
+.list-grid h1 {
+  font-size: 32px;
+  width: fit-content;
+  float: left;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.list-grid h1::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.list-listgrid {
+  margin: 0;
+  padding: 0;
+  width: 19%;
+  position: relative;
+  font-weight: 300;
+  margin-bottom: 50px;
+  vertical-align: top;
+}
+
+.list-listgrid img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.list-listgrid p {
+  color: #fff;
+  font-weight: 700;
+  line-height: 20px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+}
+
+.list-listgrid p:last-child {
+  font-weight: 400;
+  color: rgba(255, 255, 255, .7);
+}
+
+.list-listgrid:nth-child(5n) {
+  margin-right: 0%;
+}
+
+
+
+
+
+
+
+/* MAX-WIDTH : 1400 */
+@media screen and (max-width:1400px) {
+
+  .list-grid {
+    padding: 0 20px;
+    margin: 100px auto 0;
+  }
+
+  .list-grid h1 {
+    float: none;
+  }
+}
+
+/* MAX-WIDTH : 1240 */
+@media screen and (max-width:1240px) {
+
+  .list-listgrid {
+    width: 24%;
+  }
+}
+
+/* MAX-WIDTH : 900 */
+@media screen and (max-width:900px) {
+
+  .list-listgrid {
+    width: 32%;
+  }
+}
+
+/* MAX-WIDTH : 600 */
+@media screen and (max-width:600px) {
+
+  .list-listgrid {
+    width: 48%;
+  }
+}
+
+
+
+
+
+/* LIGHT - MODE */
+
+.Light-mode .list-grid p,
+.Light-mode .list-grid h1 {
+  color: #000;
+}
+
+.Light-mode .list-grid .list-container {
+  color: #000;
+  font-weight: bold;
+}
